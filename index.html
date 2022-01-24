@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
   <head>
     <meta charset="utf-8">
-    <title>Marino Todisco's website</title>
+    <title>Marino Todisco - UX/UI Designer based in Rimini</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
@@ -43,11 +43,13 @@ if (viewportmeta) {
   <body>
     <div class="page">
       <div class="main">
+        <!--===Header===-->
         <div class="header js-header" id="header">
           <div class="header__center center"><a class="header__logo" href="index.html"><img class="header__pic" src="img/marino_logo.svg" alt="" /></a>
-            <div class="header__social header__social_main"><a class="header__link" href="#"><svg class="icon icon-dribbble">
-                  <use xlink:href="img/sprite.svg#icon-dribbble"></use>
-                </svg>Dribbble</a><a class="header__link" href="#"><svg class="icon icon-instagram">
+            <div class="header__social header__social_main"><a class="header__link" href="https://www.linkedin.com/in/marino-todisco-656b3815a/" target="_blank"><svg class="icon icon-dribbble">
+                  <use xlink:href="img/sprite.svg#linkedin-icon" ></use>
+                </svg>Linkedin</a>
+                <a class="header__link" href="https://www.linkedin.com/in/marino-todisco-656b3815a/" target="_blank"><svg class="icon icon-instagram">
                   <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg>Instagram</a></div><button class="header__burger js-header-burger"></button>
           </div>
@@ -78,19 +80,23 @@ if (viewportmeta) {
                 </a>
               </div>
               <nav class="header__nav"><a class="header__item" href="#"><span>About</span></a><a class="header__item" href="#"><span>Work</span></a><a class="header__item" href="#"><span>Services</span></a><a class="header__item" href="#"><span>Contact</span></a></nav>
-              <div class="header__social header__social_inner"><a class="header__link" href="#"><svg class="icon icon-dribbble">
-                    <use xlink:href="img/sprite.svg#icon-dribbble"></use>
-                  </svg>Dribbble</a><a class="header__link" href="#"><svg class="icon icon-instagram">
+
+              <div class="header__social header__social_inner"><a class="header__link" href="https://www.linkedin.com/in/marino-todisco-656b3815a/"target="_blank"><svg class="icon icon-dribbble">
+                    <use xlink:href="img/sprite.svg#linkedin-icon"></use>
+                  </svg>Linkedin</a>
+
+                  <a class="header__link" href="https://www.linkedin.com/in/marino-todisco-656b3815a/"target="_blank"><svg class="icon icon-instagram">
                     <use xlink:href="img/sprite.svg#icon-instagram"></use>
                   </svg>Instagram</a></div>
             </div>
           </div>
         </div>
+          <!--===Header===-->
         <div class="main__bg"><img class="main__pic" src="img/bg-main.jpg" alt=""></div>
         <div class="main__center center">
           <div class="main__wrap">
             <div class="main__stage stage" data-aos="transform">Marino Todisco</div>
-            <h1 class="main__title title h1"><span data-aos="transform" data-aos-delay="150">Hello, my</span><span data-aos="transform" data-aos-delay="300">name's Jack.</span><span data-aos="transform" data-aos-delay="450">I'm a Visual</span><span data-aos="transform" data-aos-delay="600">Designer.</span></h1><a class="scroll js-scroll" href="#details" data-aos="transform">
+            <h1 class="main__title title h1"><span data-aos="transform" data-aos-delay="150">Hello, my</span><span data-aos="transform" data-aos-delay="300">name's Marino.</span><span data-aos="transform" data-aos-delay="450">I'm a UX/UI</span><span data-aos="transform" data-aos-delay="600">Designer.</span></h1><a class="scroll js-scroll" href="#details" data-aos="transform">
               <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
               <div class="scroll__text">Scroll down</div>
             </a>
@@ -118,26 +124,26 @@ if (viewportmeta) {
             <h3 class="details__info h3">I enjoy creating delightful, <br>human-centered digital experiences.</h3>
           </div>
           <h2 class="details__title" data-aos="animation-scale-y">Think. Make. <br>Solve. </h2>
-          <div class="details__btn" data-aos="animation-translate-y"><button class="btn btn_purple"><span class="btn__text">Contact Me</span><svg class="icon icon-arrow-right">
+          <div class="details__btn" data-aos="animation-translate-y"><button class="btn btn_purple"><a href="#contact" class="btn__text" style="color:white">Contact Me</a><svg class="icon icon-arrow-right">
                 <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
               </svg></button></div>
           <div class="details__container">
             <div class="details__slider owl-carousel js-slider-details">
-              <div class="details__item">
-                <div class="details__preview details__preview_cursor" data-aos="animation-scale">
-                  <div class="details__img"><img class="details__pic" src="img/cursor.png" alt=""></div>
-                </div>
-                <h5 class="details__category h5" data-aos="animation-scale-y">User Interface</h5>
-                <div class="details__text" data-aos="animation-scale-y">We have got quite a few already made templates for better project management that you can use now.</div>
-                <div class="details__btn" data-aos="animation-scale-y"><button class="btn btn_dark">Find out more </button></div>
-              </div>
               <div class="details__item">
                 <div class="details__preview details__preview_hand" data-aos="animation-scale" data-aos-delay="150">
                   <div class="details__img"><img class="details__pic" src="img/hand.png" alt=""></div>
                 </div>
                 <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="150">User Experience</h5>
                 <div class="details__text" data-aos="animation-scale-y" data-aos-delay="150">We have got quite a few already made templates for better project management that you can use now.</div>
-                <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="150"><button class="btn btn_dark">Find out more </button></div>
+                <!--<div class="details__btn" data-aos="animation-scale-y" data-aos-delay="150"><button class="btn btn_dark">Find out more </button></div>-->
+              </div>
+              <div class="details__item">
+                <div class="details__preview details__preview_cursor" data-aos="animation-scale">
+                  <div class="details__img"><img class="details__pic" src="img/cursor.png" alt=""></div>
+                </div>
+                <h5 class="details__category h5" data-aos="animation-scale-y">User Interface</h5>
+                <div class="details__text" data-aos="animation-scale-y">We have got quite a few already made templates for better project management that you can use now.</div>
+                <!--<div class="details__btn" data-aos="animation-scale-y"><button class="btn btn_dark">Find out more </button></div>-->
               </div>
               <div class="details__item">
                 <div class="details__preview details__preview_color" data-aos="animation-scale" data-aos-delay="300">
@@ -145,28 +151,7 @@ if (viewportmeta) {
                 </div>
                 <h5 class="details__category h5" data-aos="animation-scale-y" data-aos-delay="300">UI Design Kit</h5>
                 <div class="details__text" data-aos="animation-scale-y" data-aos-delay="300">We have got quite a few already made templates for better project management that you can use now.</div>
-                <div class="details__btn" data-aos="animation-scale-y" data-aos-delay="300"><button class="btn btn_dark">Find out more </button></div>
-              </div>
-              <div class="details__item">
-                <div class="details__preview details__preview_cursor">
-                  <div class="details__img"><img class="details__pic" src="img/cursor.png" alt=""></div>
-                </div>
-                <h5 class="details__category h5">User Interface</h5>
-                <div class="details__text">We have got quite a few already made templates for better project management that you can use now.</div><button class="details__btn btn btn_dark">Find out more </button>
-              </div>
-              <div class="details__item">
-                <div class="details__preview details__preview_hand">
-                  <div class="details__img"><img class="details__pic" src="img/hand.png" alt=""></div>
-                </div>
-                <h5 class="details__category h5">User Experience</h5>
-                <div class="details__text">We have got quite a few already made templates for better project management that you can use now.</div><button class="details__btn btn btn_dark">Find out more</button>
-              </div>
-              <div class="details__item">
-                <div class="details__preview details__preview_color">
-                  <div class="details__img"><img class="details__pic" src="img/color-picker.png" alt=""></div>
-                </div>
-                <h5 class="details__category h5">UI Design Kit</h5>
-                <div class="details__text">We have got quite a few already made templates for better project management that you can use now.</div><button class="details__btn btn btn_dark">Find out more</button>
+                <!--<div class="details__btn" data-aos="animation-scale-y" data-aos-delay="300"><button class="btn btn_dark">Find out more </button></div>-->
               </div>
             </div>
           </div>
@@ -175,15 +160,15 @@ if (viewportmeta) {
           <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="down" src="img/figure-1.png" alt=""></div>
           <div class="details__figure"><img class="details__pic js-parallax" data-scale="2" data-orientation="up" src="img/figure-2.png" alt=""></div>
           <div class="details__figure"><img class="details__pic js-parallax" data-scale="1.2" data-orientation="up" src="img/figure-3.png" alt=""></div>
-        </div><a class="details__contact" href="#">Contact me</a>
+        </div><!--<a class="details__contact" href="#">Contact me</a>-->
       </div>
       <div class="work">
         <div class="work__circles"></div>
         <div class="work__center center">
           <div class="work__wrap">
             <div class="work__stage stage stage_pink" data-aos="animation-scale-y">Who I Work With</div>
-            <h2 class="work__title title h1" data-aos="animation-scale-y" data-aos-delay="150">Art Direction for Global Leading Brands.</h2>
-            <div class="work__text" data-aos="animation-scale-y" data-aos-delay="300">I research and create breakthrough - delightful ideas, leading visual designers.</div><a class="scroll js-scroll" data-aos="animation-scale-y" href="#cases">
+            <h2 class="work__title title h1" data-aos="animation-scale-y" data-aos-delay="150">Innovators and technology enthusiasts.</h2>
+            <div class="work__text" data-aos="animation-scale-y" data-aos-delay="300">Through resarch and design, I try to solve problems and improve the user experience. </div><a class="scroll js-scroll" data-aos="animation-scale-y" href="#cases">
               <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
               <div class="scroll__text">Scroll down</div>
             </a>
@@ -205,7 +190,7 @@ if (viewportmeta) {
           <div class="cases__center center">
             <div class="cases__stage stage" data-aos="animation-scale-y">Portfolio</div>
             <h2 class="cases__title h1" data-aos="animation-scale-y" data-aos-delay="150">Look at My <br>Products.</h2>
-            <div class="cases__nav" data-aos="animation-scale-y" data-aos-delay="300"><a class="cases__link active" href="#">Website</a><a class="cases__link" href="#">Illustration</a><a class="cases__link" href="#">Mobile</a></div>
+            <!--<div class="cases__nav" data-aos="animation-scale-y" data-aos-delay="300"><a class="cases__link active" href="#">Website</a><a class="cases__link" href="#">Illustration</a><a class="cases__link" href="#">Mobile</a></div>-->
             <div class="cases__list js-owl" data-items-mobile-portrait="1" data-items-mobile-album="1" data-autoheight><a class="cases__item" data-aos="animation-translate-y" data-aos-delay="" href="case.html">
                 <div class="cases__preview"><img class="cases__pic" src="img/cases-pic-1.jpg" alt="">
                   <div class="cases__box">Case <br>Study</div>
@@ -319,31 +304,30 @@ if (viewportmeta) {
           <div class="contacts">
             <div class="contacts__center center">
               <div class="contacts__container">
-                <div class="contacts__wrap">
+                <div class="contacts__wrap" id="contact">
                   <div class="contacts__stage stage" data-aos="animation-scale-y">Say hello 👋</div>
                   <h2 class="contacts__title h1" data-aos="animation-scale-y" data-aos-delay="200">Let’s Work <br>Together.</h2>
                   <div class="contacts__info" data-aos="animation-scale-y" data-aos-delay="400">I’d love to meet up with you to discuss your venture, and potential collaborations.</div>
                 </div>
                 <div class="contacts__row">
-                  <div class="contacts__details" data-aos="animation-translate-y"><a class="contacts__line" href="mailto:hello@ui8.net">
+                  <div class="contacts__details" data-aos="animation-translate-y"><a class="contacts__line" href="mailto:todisco.marino@gmail.com">
                       <div class="contacts__icon"><svg class="icon icon-email">
                           <use xlink:href="img/sprite.svg#icon-email"></use>
                         </svg></div>
-                      <div class="contacts__text">hello@ui8.net</div>
+                      <div class="contacts__text">todisco.marino@gmail.com</div>
                     </a>
                     <div class="contacts__line">
                       <div class="contacts__icon"><svg class="icon icon-place">
                           <use xlink:href="img/sprite.svg#icon-place"></use>
                         </svg></div>
                       <div class="contacts__text">
-                        <p>4074 Ebert Summit Suite 375</p>
-                        <p>Lake Leonardchester</p>
+                        <p>Rimini, Italy</p>
                       </div>
-                    </div><a class="contacts__line" href="tel:+441236547890">
+                    </div><a class="contacts__line" href="tel:+393292975194">
                       <div class="contacts__icon"><svg class="icon icon-phone">
                           <use xlink:href="img/sprite.svg#icon-phone"></use>
                         </svg></div>
-                      <div class="contacts__text">+44 123 654 7890</div>
+                      <div class="contacts__text">+39 3292975194</div>
                     </a>
                   </div>
                   <form class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
@@ -361,7 +345,7 @@ if (viewportmeta) {
                           </svg></div>
                       </div>
                     </div>
-                    <div class="contacts__field field">
+                    <!--<div class="contacts__field field">
                       <div class="field__wrap"><select class="field__select" name="question">
                           <option>What are you working on?</option>
                           <option>What are you working on? 2</option>
@@ -370,7 +354,7 @@ if (viewportmeta) {
                             <use xlink:href="img/sprite.svg#icon-arrows"></use>
                           </svg></div>
                       </div>
-                    </div>
+                    </div>-->
                     <div class="contacts__field field field_textarea">
                       <div class="field__wrap"><textarea class="field__textarea" name="message" placeholder="Message"></textarea>
                         <div class="field__icon"><svg class="icon icon-message">
@@ -421,13 +405,13 @@ if (viewportmeta) {
             <div class="footer__center center">
               <div class="footer__body"><a class="footer__logo" href="index.html"><img class="footer__pic" src="img/marino_logo_footer.svg" alt="" /></a>
                 <div class="footer__wrap">
-                  <div class="footer__title h1">You only have one chance to make a first impression.</div>
-                  <div class="footer__info h4">Let’s make it an amazing one.</div>
+                  <div class="footer__title h1">Let's create new and amazing experiences together</div>
+                  <!--<div class="footer__info h4">Let’s make it an amazing one.</div>-->
                 </div>
                 <div class="footer__menu"><a class="footer__link" href="#">About Me</a><a class="footer__link" href="#">Projects</a><a class="footer__link" href="#">Contact</a><a class="footer__link" href="#">Dribbble</a><a class="footer__link" href="#">Instagram</a></div>
               </div>
               <div class="footer__bottom">
-                <div class="footer__copyright">© 2020, UI8 LLC.</div><a class="footer__scroll js-scroll" href="#header">Back to top</a>
+                <div class="footer__copyright">© 2022, Marino Todisco.</div><a class="footer__scroll js-scroll" href="#header">Back to top</a>
               </div>
             </div>
             <div class="footer__bg">
