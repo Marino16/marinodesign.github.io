@@ -2321,7 +2321,7 @@ a.btn {
   color: #111029;
   -webkit-transition: color .25s;
   -o-transition: color .25s;
-  transition: color .25s;
+  transition: color .25s; 
 }
 
 .header__item span {
@@ -4131,10 +4131,6 @@ body:not(.touch-device) .owl-item:hover .details__preview {
   background-attachment: fixed;
 }
 
-.product__preview {
-  font-size: 0;
-}
-
 .product__preview .product__pic {
   width: 100%;
 }
@@ -5860,6 +5856,9 @@ body:not(.touch-device) .owl-item:hover .details__preview {
     max-width: 230px;
     font-weight: 400;
   }
+  .product__bg {
+    background-attachment: inherit;
+   }
   .product__bg {
     height: 768px;
   }
