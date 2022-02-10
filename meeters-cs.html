@@ -28,6 +28,12 @@
     <meta property="og:site_name" content="Marino Todisco - UX/UI Designer based in Rimini">
     <!--===Stylesheet===-->
     <link rel="stylesheet" media="all" href="css/app.css">
+
+    <!-- Fancybox script setup -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link  href="./css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="./js/lib/jquery.fancybox.min.js"></script>
+
     <!--===Script===-->
     <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
 if (viewportmeta) {
@@ -186,7 +192,8 @@ if (viewportmeta) {
               <p>This product includes design + code. You should have some basic coding experience if you plan on modifying and or implementing the template.</p>
             </div>
           </div>
-          <div class="desc__list"><a class="desc__preview" href="#" data-aos="animation-translate-y" data-aos-delay=""><img class="desc__pic" src="img/case-studies/meeters/meeters_mockup.jpg" alt="">
+          <div class="desc__list"><a class="desc__preview" data-fancybox="gallery" href="img/case-studies/meeters/meeters_mockup.jpg" data-aos="animation-translate-y" data-aos-delay="">
+              <img class="desc__pic" src="img/case-studies/meeters/meeters_mockup.jpg" alt="">
               <div class="desc__zoom"><img class="desc__pic" src="img/arrow-up-right.svg" alt=""></div>
             </a>
             <a class="desc__preview" href="#" data-aos="animation-translate-y" data-aos-delay="200"><img class="desc__pic" src="img/case-studies/meeters/meeters_ipad.jpg" alt="">
