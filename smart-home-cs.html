@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Case study - Meeters</title>
+    <title>Case study - Smart home app</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
@@ -13,21 +13,25 @@
     <!--===Meta===-->
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Marino Todisco - Meeters design case study">
+    <meta name="description" content="Marino Todisco - Smart home app case study">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="Marino Todisco - UX/UI Designer based in Rimini">
-    <meta name="twitter:title" content="Marino Todisco - Meeters design case study">
-    <meta name="twitter:description" content="Marino Todisco - Meeters design case study">
+    <meta name="twitter:title" content="Marino Todisco - Smart home app case study">
+    <meta name="twitter:description" content="Marino Todisco - Smart home app case study">
     <meta name="twitter:creator" content="Marino">
     <meta name="twitter:image" content="https://marino16.github.io/img/case-studies/meeters/meeters_social.jpg">
-    <meta property="og:title" content="Marino Todisco - Meeters design case study">
+    <meta property="og:title" content="Marino Todisco - Smart home app case study">
     <meta property="og:type" content="Let's create new and amazing digital experiences together">
     <meta property="og:url" content="https://marino16.github.io/img/case-studies/meeters/meeters_social.jpg">
     <meta property="og:image" content="https://marino16.github.io/img/case-studies/meeters/meeters_social.jpg">
-    <meta property="og:description" content="Marino Todisco - Meeters design case study">
+    <meta property="og:description" content="Marino Todisco - Smart home app case study">
     <meta property="og:site_name" content="Marino Todisco - UX/UI Designer based in Rimini">
     <!--===Stylesheet===-->
     <link rel="stylesheet" media="all" href="css/app.css">
+    <!-- Fancybox script setup -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link  href="./css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="./js/lib/jquery.fancybox.min.js"></script>
     <!--===Script===-->
     <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
 if (viewportmeta) {
@@ -93,7 +97,7 @@ if (viewportmeta) {
         <div class="product__head">
           <div class="product__center center">
             <div class="product__wrap">
-              <div class="product__stage stage" data-aos="animation-scale-y">Meeters Case Study</div>
+              <div class="product__stage stage" data-aos="animation-scale-y">Smart home app</div>
               <h1 class="product__title title h1" data-aos="animation-scale-y" data-aos-delay="150">The event digital platform</h1>
               <div class="product__info h5" data-aos="animation-scale-y" data-aos-delay="300">Build connections</div>
             </div>
@@ -109,7 +113,7 @@ if (viewportmeta) {
             </div>
           </div>
         </div>
-        <div class="product__bg" style="background-image: url('img/case-studies/meeters/meeters_bg.jpg')"></div>
+        <div class="product__bg" style="background-image: url('img/case-studies/home app/domotic_background.jpg')"></div>
         <div class="product__body">
           <div class="product__center center">
             <div class="product__box product__box_hide" data-aos="animation-scale-y">
@@ -129,7 +133,7 @@ if (viewportmeta) {
               </div>
             </div>
             <!--==Product Preview==-->
-            <div class="product__preview"><img class="product__pic js-parallax" data-scale="1.6" data-orientation="right" src="img/case-studies/meeters/meeters_home.jpg" alt=""></div>
+            <div class="product__preview"><img class="product__pic js-parallax" data-scale="1.6" data-orientation="right" src="img/smart_home_app.png" alt=""></div>
             <!--<div class="product__review">
               <div class="product__author" data-aos="animation-scale-y">
                 <div class="product__ava"><img class="product__pic" src="img/ava-1.jpg" alt=""></div>
@@ -185,10 +189,11 @@ if (viewportmeta) {
               <p>This product includes design + code. You should have some basic coding experience if you plan on modifying and or implementing the template.</p>
             </div>
           </div>
-          <div class="desc__list"><a class="desc__preview" href="#" data-aos="animation-translate-y" data-aos-delay=""><img class="desc__pic" src="img/case-studies/meeters/meeters_mockup.jpg" alt="">
+          <div class="desc__list">
+            <a class="desc__preview" data-fancybox="gallery" href="img/case-studies/home app/domotic_dribble.jpg" data-aos="animation-translate-y" data-aos-delay=""><img class="desc__pic" src="img/case-studies/home app/domotic_dribble.jpg" alt="">
               <div class="desc__zoom"><img class="desc__pic" src="img/arrow-up-right.svg" alt=""></div>
             </a>
-            <a class="desc__preview" href="#" data-aos="animation-translate-y" data-aos-delay="200"><img class="desc__pic" src="img/case-studies/meeters/meeters_ipad.jpg" alt="">
+            <a class="desc__preview" data-fancybox="gallery" href="img/case-studies/home app/domotic_mockup.jpg" data-aos="animation-translate-y" data-aos-delay="200"><img class="desc__pic" src="img/case-studies/home app/domotic_mockup.jpg" alt="">
               <div class="desc__zoom"><img class="desc__pic" src="img/arrow-up-right.svg" alt=""></div>
             </a>
           </div>
@@ -206,6 +211,16 @@ if (viewportmeta) {
             <h2 class="cases__title h1" data-aos="animation-scale-y" data-aos-delay="200">Have a look</h2>
             <div class="cases__container">
               <div class="cases__slider owl-carousel js-slider-cases">
+                <!--===Meeters PWA===-->
+              <a class="cases__item"     data-aos="animation-translate-y" data-aos-delay="150" href="meeters-cs.html">
+                <div class="cases__preview"><img class="cases__pic" src="img/case-studies/meeters/meeters_home.jpg" alt="meeters PWA">
+                  <div class="cases__box">Case <br>Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Meeters: build connections</h4>
+                  <div class="cases__text">The digital event platform </div>
+                </div>
+              </a>
                 <!--===Dog app===-->
               <a class="cases__item"     data-aos="animation-translate-y" data-aos-delay="200" href="dog-app-cs.html">
                 <div class="cases__preview"><img class="cases__pic" src="img/dog_mockup_preview.png" alt="dog care app">
@@ -224,16 +239,6 @@ if (viewportmeta) {
                 <div class="cases__body">
                   <h4 class="cases__info h4">Botika website</h4>
                   <div class="cases__text">Bringing innovation to companies </div>
-                </div>
-              </a>
-              <!--===Smart home app===-->
-              <a class="cases__item" data-aos="animation-translate-y" data-aos-delay="300" href="smart-home-cs.html">
-                <div class="cases__preview"><img class="cases__pic" src="img/smart_home_app.png" alt="smart home app">
-                  <div class="cases__box">Case <br>Study</div>
-                </div>
-                <div class="cases__body">
-                  <h4 class="cases__info h4">Smart Home app</h4>
-                  <div class="cases__text">Manage your smart home with a tap</div>
                 </div>
               </a>
               <!--===Hotel website redesign===-->
