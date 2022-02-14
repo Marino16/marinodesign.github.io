@@ -63,6 +63,20 @@ $(document).ready(function () {
         }
     });
 
+    var form = $('#contact-form');
+    // contactformvalidation
+    console.log(form)
+    form.on("keyup", function(event) {
+    console.log(event);
+    var email=$("#form-email").val();
+    if (email !==""){
+    $("#btn-form").attr("disabled", false)
+    }else{
+    $("#btn-form").attr("disabled",true)    
+    }
+     });
+     //devi fare lo stato diverso del bottone
+
     // slider.on('changed.owl.carousel', function(event) {
     //     const items = slider.find('.owl-item');
     //     items.removeClass('left');
