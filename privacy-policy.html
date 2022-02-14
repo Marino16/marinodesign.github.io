@@ -58,7 +58,7 @@
 
         body {
             margin: 0;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+            font-family: "Poppins",system-ui, -apple-system,Poppins, Segoe UI, Roboto, Helvetica,
                 Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
         }
 
@@ -80,7 +80,7 @@
         kbd,
         pre,
         samp {
-            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+            font-family: "Poppins", SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
             font-size: 1em;
         }
 
@@ -408,7 +408,7 @@
         .theme-generate .is-full .container-outer,
         .theme-generate .is-full .container-outer:before,
         .theme-generate .is-full .footer-main {
-            background-color: #f9f9f9;
+            background-color:transparent !important;
         }
 
         .theme-basic .header-main,
@@ -416,7 +416,7 @@
         .theme-basic .is-full .container-outer,
         .theme-basic .is-full .container-outer:before,
         .theme-basic .is-full .footer-main {
-            background-color: #ebf1fd;
+            background-color: #ebf1fd00;
         }
 
         .theme-standard .header-main,
@@ -523,6 +523,7 @@
             left: 0;
             width: 100%;
             background-color: #fff;
+           
         }
 
         .header-main__logo {
@@ -1270,71 +1271,6 @@
             display: block;
             opacity: 0;
         }
-
-        .hamburger .patty {
-            position: relative;
-            z-index: 2;
-            display: block;
-            border-radius: 1px;
-            height: 2px;
-            width: 20px;
-            background-color: #2e2e2e;
-            transition: transform 0.5s cubic-bezier(1, 0, 0, 1) 0.1s;
-        }
-
-        .hamburger .patty:not(:last-child) {
-            margin-bottom: 5px;
-        }
-
-        /*! critical:end */
-        .hamburger {
-            cursor: pointer;
-            transform-origin: 50% 40%;
-            padding: 0;
-        }
-
-        .hamburger__inner {
-            transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-        }
-
-        html:not(.is-menu-open) .hamburger .patty {
-            transition: transform 0.2s cubic-bezier(0.33, 1, 0.68, 1) 0s;
-        }
-
-        html:not(.is-menu-open) .hamburger:hover .patty:nth-child(2) {
-            transform: translateY(-1px);
-        }
-
-        html:not(.is-menu-open) .hamburger:hover .patty:nth-child(4) {
-            transform: translateY(1px);
-        }
-
-        .hamburger.focus-visible,
-        .hamburger:focus {
-            outline: none;
-        }
-
-        .hamburger.focus-visible:before,
-        .hamburger:focus:before {
-            opacity: 1;
-        }
-
-        .is-menu-open .hamburger__inner {
-            transform: rotate(1turn);
-        }
-
-        .is-menu-open .hamburger .patty:nth-child(2) {
-            transform: translateY(7px) rotate(45deg);
-        }
-
-        .is-menu-open .hamburger .patty:nth-child(3) {
-            transform: scaleX(0);
-        }
-
-        .is-menu-open .hamburger .patty:nth-child(4) {
-            transform: translateY(-7px) rotate(-45deg);
-        }
-
         /*! critical:start */
         .intro.is-centered {
             text-align: center;
@@ -1743,11 +1679,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 </head>
 <body class="is-full">
-    <div class="container-page">
+<div class="main">
+<div class="container-page">
+<header class="header-main">
+<a href="index.html" class="header-main__logo" style="width:175px;">
+<img class="header__pic" src="img/marino_logo.svg" alt="" />
+</a>
+</header>
         <div class="container-outer">
             <main id="skip-to-content" class="content-main">
                     <section class="generated" aria-label="Generated policy">
-                    <div class="container container--narrow">
+                    <div class="container container--narrow" style="margin-top:150px">
                                     <!--Policy start-->
                                     <div class="filter__panels">
                                         <div id="filter-privacy-visual"
@@ -2059,7 +2001,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 </section>
-            </main>           
+            </main> 
+
 </body>
 </html> 
