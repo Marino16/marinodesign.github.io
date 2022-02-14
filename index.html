@@ -29,6 +29,8 @@
     <!--===Stylesheet===-->
     <link rel="stylesheet" media="all" href="css/app.css">
     <!--===Script===-->
+    <!--===Re captcha
+    <script src="https://www.google.com/recaptcha/api.js"></script>===-->
     <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
 if (viewportmeta) {
   if (screen.width < 375) {
@@ -364,7 +366,8 @@ if (viewportmeta) {
                       <div class="contacts__text">+39 3292975194</div>
                     </a>
                   </div>
-                  <form class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
+                  <form action="https://formsubmit.co/todisco.marino@gmail.com" method="POST" class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
+                    <input type="hidden" name="_next" value="https://marino16.github.io/success.html">
                     <div class="contacts__field field">
                       <div class="field__wrap"><input class="field__input" type="text" name="name" placeholder="Name" />
                         <div class="field__icon"><svg class="icon icon-profile">
@@ -394,6 +397,7 @@ if (viewportmeta) {
                         <div class="field__icon"><svg class="icon icon-message">
                             <use xlink:href="img/sprite.svg#icon-message"></use>
                           </svg></div>
+                          <!--<div class="g-recaptcha brochure__form__captcha"  style="margin-top:20px" data-sitekey="6LfM3HgeAAAAAFlMl3g1sbOyKwpIJcljAEexz_ZV"></div>-->
                       </div>
                     </div>
                     <div class="contacts__btn"><button class="btn btn_purple"><span class="btn__text">Let’s Talk</span><svg class="icon icon-arrow-right">
@@ -447,6 +451,34 @@ if (viewportmeta) {
       </div>
       <div class="cursor"></div>
     </div>
+    
+   <!--==Re captcha function
+    <script>
+      $recaptcha = $_POST['g-recaptcha-response'];
+$res = reCaptcha($recaptcha);
+if($res['success']){
+  // Send email
+}else{
+  // Error
+}  
+function reCaptcha($recaptcha){
+  $secret = "YOUR SECRET KEY";
+  $ip = $_SERVER['REMOTE_ADDR'];
+
+  $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
+  $url = "https://www.google.com/recaptcha/api/siteverify";
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
+  $data = curl_exec($ch);
+  curl_close($ch);
+
+  return json_decode($data, true);
+}
+
+    </script>===-->
     <script src="js/app.js"></script>
     <script src="js/common.js"></script>
   </body>
