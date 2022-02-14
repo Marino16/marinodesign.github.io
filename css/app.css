@@ -1884,6 +1884,11 @@ select {
   padding: 0 82px;
 }
 
+/*contact form btn*/
+#btn-form:disabled{
+  opacity: 60%;
+}
+
 .btn {
   min-width: 240px;
   height: 72px;

@@ -303,7 +303,7 @@ if (viewportmeta) {
                       <div class="contacts__text">+39 3292975194</div>
                     </a>
                   </div>
-                  <form action="https://formsubmit.co/todisco.marino@gmail.com" method="POST" class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
+                  <form id="contact-form" action="https://formsubmit.co/todisco.marino@gmail.com" method="POST" class="contacts__form" data-aos="animation-translate-y" data-aos-delay="200">
                     <input type="hidden" name="_next" value="https://marino16.github.io/success.html">  
                     <div class="contacts__field field">
                       <div class="field__wrap"><input class="field__input" type="text" name="name" placeholder="Name" />
@@ -313,7 +313,7 @@ if (viewportmeta) {
                       </div>
                     </div>
                     <div class="contacts__field field">
-                      <div class="field__wrap"><input class="field__input" type="email" name="email" placeholder="Email" />
+                      <div class="field__wrap"><input class="field__input" type="email" name="email" id="form-email" placeholder="Email (required)"/>
                         <div class="field__icon"><svg class="icon icon-send">
                             <use xlink:href="img/sprite.svg#icon-send"></use>
                           </svg></div>
@@ -337,7 +337,7 @@ if (viewportmeta) {
                           <!--<div class="g-recaptcha brochure__form__captcha"  style="margin-top:20px" data-sitekey="6LfM3HgeAAAAAFlMl3g1sbOyKwpIJcljAEexz_ZV"></div>-->
                       </div>
                     </div>
-                    <div class="contacts__btn"><button class="btn btn_purple"><span class="btn__text">Let’s Talk</span><svg class="icon icon-arrow-right">
+                    <div class="contacts__btn"><button id="btn-form" disabled class="btn btn_purple"><span class="btn__text">Let’s Talk</span><svg class="icon icon-arrow-right">
                           <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                         </svg></button></div>
                   </form>
