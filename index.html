@@ -61,7 +61,7 @@ if (viewportmeta) {
                 </svg>Linkedin</a>
                 <a class="header__link" href="https://www.instagram.com/marinotodisco/" target="_blank"><svg class="icon icon-instagram">
                   <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                </svg>Instagram</a></div><button class="header__burger js-header-burger"></button>
+                </svg>Instagram</a></div><!--<button class="header__burger js-header-burger"></button>-->
           </div>
           <div class="header__wrapper js-header-wrapper">
             <div class="header__preview"><a class="header__logo" href="index.html"><img class="header__pic" src="img/marino_logo_white.svg" alt="" /></a>
@@ -89,7 +89,11 @@ if (viewportmeta) {
                   <div class="header__text">+3292975194 </div>
                 </a>
               </div>
-              <!--<nav class="header__nav"><a class="header__item" href="index.html#about"><span>About</span></a><a class="header__item" href="index.html#work"><span>Work</span></a><a class="header__item" href="index.html#work"></a><a class="header__item" href="index.html#contact"><span>Contact</span></a></nav>-->
+              <nav class="header__nav">
+                <a class="header__item" href="#about"><span>About</span></a>
+                <a class="header__item" href="#work"><span>Work</span></a>
+                <a class="header__item" href="#contact"><span>Contact</span></a>
+              </nav>
 
               <div class="header__social header__social_inner"><a class="header__link" href="https://www.linkedin.com/in/marino-todisco-656b3815a/"target="_blank"><svg class="icon icon-dribbble">
                     <use xlink:href="img/sprite.svg#linkedin-icon"></use>
@@ -102,10 +106,10 @@ if (viewportmeta) {
           </div>
         </div>
           <!--===Header===-->
-        <div class="main__bg" id="about"><img class="main__pic" src="img/bg-main.jpg" alt=""></div>
+        <div class="main__bg" ><img class="main__pic" src="img/bg-main.jpg" alt=""></div>
         <div class="main__center center">
           <div class="main__wrap">
-            <div class="main__stage stage" data-aos="transform">Hello!</div>
+            <div class="main__stage stage"  id="about" data-aos="transform">Hello!</div>
             <h1 class="main__title title h1"><span data-aos="transform" data-aos-delay="150">My name</span><span data-aos="transform" data-aos-delay="300">is Marino.</span><span data-aos="transform" data-aos-delay="450">I'm a Product</span><span data-aos="transform" data-aos-delay="600">Designer.</span></h1><a class="scroll js-scroll" href="#details" data-aos="transform">
               <div class="scroll__icon"><img class="scroll__pic" src="img/scroll.svg" alt=""></div>
               <div class="scroll__text">Scroll down</div>
