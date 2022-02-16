@@ -2141,6 +2141,9 @@ a.btn {
   transition: transform .25s;
   transition: transform .25s, -webkit-transform .25s;
 }
+.hamburger-cs:before, .hamburger-cs:after {
+ background: black;
+}
 
 .header__burger:before {
   margin-bottom: 4px;
